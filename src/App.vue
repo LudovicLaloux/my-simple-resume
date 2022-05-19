@@ -1,28 +1,21 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <my-simple-resume id="app"></my-simple-resume>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import MySimpleResume from "./components/Resume"
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+      MySimpleResume
+  },
 }
 </script>
-
-<style>
+<style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600&display=swap');
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: 'Raleway', sans-serif;
 }
 </style>
