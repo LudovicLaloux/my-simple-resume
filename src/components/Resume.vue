@@ -23,12 +23,14 @@ export default {
         height: 1170px;
         width: 827px;
         display: flex;
-        .leftSide {
-            width: 30%;
+        .LeftSide {
+            min-width: 249px;
+            max-width: 249px;
             height: 100%;
         }
-        .rightSide {
-            width: 70%;
+        .RightSide {
+            min-width: 578px;
+            max-width: 578px;
             height: 100%;
         }
     }

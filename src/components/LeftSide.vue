@@ -1,53 +1,53 @@
 <template>    
     <div class="LeftSide">
-        <div class="pictureFrame">
+        <div class="pictureFrame mx-auto mt-8 mb-6">
             <div class="picture">
             </div>
         </div>
-        <div class="name">
+        <div class="name text-center mt-2 mx-2">
             {{ $t('profile.name') }}
         </div>
-        <div class="jobTitle">
+        <div class="jobTitle py-2 text-center">
             {{ $t('profile.title1') }}<br>
             {{ $t('profile.title2') }}
         </div>
-        <div class="description">
-            <div class="profileHeader">
-                <v-icon color="white">fa-user</v-icon>
-                <span class="headerTitle">{{ $t('profile.description.title') }}</span>
+        <div class="description mt-10">
+            <div class="profileHeader ml-6 mb-2 d-flex align-center">
+                <v-icon class="mr-4" color="white">fa-user</v-icon>
+                <span>{{ $t('profile.description.title') }}</span>
             </div>
-            <div class="descriptionContent">
+            <div class="descriptionContent px-3">
                 <p>{{ $t('profile.description.content') }}</p>
             </div>
         </div>
-        <div class="contact">
-            <div class="profileHeader">
-                <v-icon color="white">fa-address-book</v-icon>
-                <span class="headerTitle">{{ $t('profile.contact.title') }}</span>
+        <div class="contact mt-14">
+            <div class="profileHeader ml-6 mb-2 d-flex align-center">
+                <v-icon class="mr-4" color="white">fa-address-book</v-icon>
+                <span>{{ $t('profile.contact.title') }}</span>
             </div>
-            <div class="contactContent">
-                <div class="contactItem">
-                    <v-icon small color="white">fa-envelope</v-icon>
+            <div class="px-3">
+                <div class="mb-1">
+                    <v-icon class="mr-2" small color="white">fa-envelope</v-icon>
                     <span>{{ $t('profile.contact.mail') }}</span>
                 </div>
-                <div class="contactItem">
-                    <v-icon small color="white">fa-phone</v-icon>
+                <div class="mb-1">
+                    <v-icon class="mr-2" small color="white">fa-phone</v-icon>
                     <span>{{ $t('profile.contact.phone') }}</span>
                 </div>
-                <div class="contactItem">
-                    <v-icon small color="white">fa-map</v-icon>
+                <div class="mb-1">
+                    <v-icon class="mr-2" small color="white">fa-map</v-icon>
                     <span>{{ $t('profile.contact.address') }}</span>
                 </div>
-                <div class="contactItem">
-                    <v-icon small color="white">fa-brands fa-github</v-icon>
+                <div class="mb-1">
+                    <v-icon class="mr-2" small color="white">fa-brands fa-github</v-icon>
                     <span>{{ $t('profile.contact.github') }}</span>
                 </div>
-                <div class="contactItem">
-                    <v-icon small color="white">fa-brands fa-gitlab</v-icon>
+                <div class="mb-1">
+                    <v-icon class="mr-2" small color="white">fa-brands fa-gitlab</v-icon>
                     <span>{{ $t('profile.contact.gitlab') }}</span>
                 </div>
-                <div class="contactItem">
-                    <v-icon small color="white">fa-brands fa-codepen</v-icon>
+                <div class="mb-1">
+                    <v-icon class="mr-2" small color="white">fa-brands fa-codepen</v-icon>
                     <span>{{ $t('profile.contact.codepen') }}</span>
                 </div>
             </div>
@@ -70,10 +70,6 @@
             border: 8px solid white;
             width: 186px;
             height: 186px;
-            margin-top: 30px;
-            margin-left: auto; 
-            margin-bottom: 22px;
-            margin-right: auto;
             .picture {
                 border-width: 3px;
                 border-style: solid;
@@ -86,56 +82,28 @@
                 background-repeat: no-repeat;
             }
         }
-        .name, .jobTitle {
-            text-align: center;
-        }
         .name {
             font-weight: 600;
             font-size: 35px;
             border-bottom: solid 4px white;
             padding-bottom: 8px;
-            margin: 0 5px;
+            line-height: 1.1;
         }
         .jobTitle {
-            padding-top: 8px;
-            padding-bottom: 8px;
             font-weight: 400;
             font-size: 30px;
         }
         .profileHeader {
-            .headerTitle {
-                font-size: 22px;
-                margin-left: 15px;                    
-            }
+            font-size: 1.2em;
+            font-weight: 600;
         }
         .descriptionContent {
-            padding-left: 16px;
-            padding-right: 18px;
-            font-size: 19px;
+            font-size: 1.1em;
             text-align: left;
+            p {
+                text-align: justify;
+                text-justify: auto;
+            }
         }
-        // .contactContent {
-        //     padding-top: 10px;
-        //     padding-bottom: 18px;
-        //     .contactItem {
-        //         padding-top: 12px;
-        //         padding-left: 18px;
-        //         span {
-        //             padding-left: 12px;
-        //         }
-        //     }
-        // }
-        // .hobbiesContent {
-        //     padding-top: 10px;
-        //     .hobbiesItem {
-        //         display: flex;
-        //         padding-top: 12px;
-        //         padding-left: 16px;
-        //         p {
-        //             padding-left: 12px;
-        //             margin: 0;
-        //         }
-        //     }
-        // }
     }
 </style>
